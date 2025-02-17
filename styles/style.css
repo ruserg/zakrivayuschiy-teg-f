@@ -62,6 +62,30 @@ button {
   border-width: 2px 0;
   display: block;
 }
+.card_feautured_filter_sepia {
+  filter: sepia(150%);
+}
+.card_feautured_filter_saturate {
+  filter: saturate(700%);
+}
+.card_feautured_filter_grayscale {
+  filter: grayscale(1);
+}
+.card_feautured_filter_blur {
+  filter: blur(1em);
+}
+.card_feautured_filter_contrast {
+  filter: contrast(150%);
+}
+.card_feautured_filter_brightness {
+  filter: brightness(55%);
+}
+.card_feautured_filter_invert {
+  filter: invert(4.5);
+}
+.card_featured_filter_multiple {
+  filter: sepia(9) brightness(1.5) contrast(0.5);
+}
 .watermark {
   font-family: var(--font-accent), monospace;
   color: #000;
@@ -105,73 +129,71 @@ button {
 .like-icon {
   padding-top: 5px;
 }
-.core, .main-body {
+.core,
+.main-body {
   fill: #fff;
 }
 .core {
-  transition: fill .3s ease-in-out 0.03s;
+  transition: fill 0.3s ease-in-out 0.03s;
 }
 .main-body {
-  transition: fill .3s ease-in-out;
+  transition: fill 0.3s ease-in-out;
 }
 .card__icon-button:hover .core {
   fill: #000;
-  transition: fill .3s ease-in-out;
+  transition: fill 0.3s ease-in-out;
 }
 .card__icon-button:hover .main-body {
   fill: #000;
-  transition: fill .3s ease-in-out 0.05s;
+  transition: fill 0.3s ease-in-out 0.05s;
 }
 
 .card__icon-button:active .core {
-  fill: #FF0000;
-  transition: fill .3s ease-in-out;
+  fill: #ff0000;
+  transition: fill 0.3s ease-in-out;
 }
 
 .card__icon-button:active .main-body {
-  fill: #FF0000;
-  transition: fill .3s ease-in-out 0.05s;
+  fill: #ff0000;
+  transition: fill 0.3s ease-in-out 0.05s;
 }
 .sparks {
   opacity: 0;
 }
 
 .like-icon.is-liked .contour {
-  fill: #FF0000;
-  transition: fill .3s ease-in-out 0.06s;
-  animation:heart 0.3s ease-in forwards;
-  
+  fill: #ff0000;
+  transition: fill 0.3s ease-in-out 0.06s;
+  animation: heart 0.3s ease-in forwards;
 }
 .like-icon.is-liked .main-body {
-  fill: #FF0000;
-  transition: fill .3s ease-in-out 0.06s;
-  animation:heart 0.3s ease-in forwards;
-  
+  fill: #ff0000;
+  transition: fill 0.3s ease-in-out 0.06s;
+  animation: heart 0.3s ease-in forwards;
 }
 .like-icon.is-liked .core {
-  fill: #FF0000;
-  transition: fill .3s ease-in-out 0.06s;
-  animation:heart 0.3s ease-in forwards;
-  
+  fill: #ff0000;
+  transition: fill 0.3s ease-in-out 0.06s;
+  animation: heart 0.3s ease-in forwards;
 }
 .like-icon.is-liked .sparks {
-  fill: #FF0000;
+  fill: #ff0000;
   /* transition: fill .3s ease-in-out 0.06s; */
-  animation:sparks 0.3s ease-in forwards 0.3s;
+  animation: sparks 0.3s ease-in forwards 0.3s;
 }
 
 @keyframes heart {
   0% {
-  display: block;
-  transform: scale(1);
+    display: block;
+    transform: scale(1);
   }
-   50% {
-  transform: scale(1.25)
+  50% {
+    transform: scale(1.25);
   }
   100% {
     display: block;
     transform: scale(1);
-    }
+  }
 }
 @keyframes sparks {
   0% {
@@ -184,7 +206,6 @@ button {
     opacity: 0;
   }
 }
-
 
 .card__text-button {
   position: relative;
