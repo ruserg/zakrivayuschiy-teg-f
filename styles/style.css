@@ -236,7 +236,7 @@ button {
   outline: none;
 }
 .save_blok {
-  padding: 53px 0 100px;
+  padding: 50px 0 100px;
 }
 .button_save {
   padding: 15px 20px;
@@ -252,8 +252,7 @@ button {
 }
 .dialog {
   padding: 0px;
-  min-width: 345px;
-  max-width: 353px;
+  max-width: 342px;
 }
 .dialog .page_title_accent {
   font-size: 14px;
@@ -266,7 +265,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding: 32px 42px;
+  padding: 30px 42px;
 }
 .description {
   display: flex;
@@ -285,6 +284,14 @@ button {
   text-transform: uppercase;
 }
 @media (width > 375px) {
+  .watermark {
+    top: 28px;
+    right: 25px;
+  }
+  .card_text {
+    line-height: 118%;
+    margin-bottom: 25.8px;
+  }
   .button_save {
     flex-direction: row;
     margin: 0px auto;
@@ -293,9 +300,5 @@ button {
   .floppy {
     width: 23px;
     height: 23px;
-  }
-  .watermark {
-    top: 32px;
-    right: 25px;
   }
 }
