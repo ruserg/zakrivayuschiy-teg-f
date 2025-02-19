@@ -262,10 +262,6 @@ button {
   background: #000000;
   opacity: 0.75;
 }
-.dialog:not([open]) {
-  pointer-events: none;
-  opacity: 0;
-}
 .form {
   display: flex;
   flex-direction: column;
