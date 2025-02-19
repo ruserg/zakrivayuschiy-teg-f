@@ -542,28 +542,26 @@
       </div>
     </main>
     <dialog class="dialog" id="dialog">
-      <form class="form">
-        <div class="description">
-          <div class="floppy-wrap">
-            <svg
-              class="floppy"
-              fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 39 39"
-            >
-              <use href="../svg/floppy.svg#floppy"></use>
-            </svg>
-          </div>
-          <h2 class="page_title_accent">Вставьте дискету, чтобы продолжить</h2>
+      <div class="description">
+        <div class="floppy-wrap">
+          <svg
+            class="floppy"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 39 39"
+          >
+            <use href="../svg/floppy.svg#floppy"></use>
+          </svg>
         </div>
-        <button
-          class="card__text-button"
-          type="button"
-          onclick="window['dialog'].close()"
-        >
-          <span class="button__text">Оk</span>
-        </button>
-      </form>
+        <h2 class="page_title_accent">Вставьте дискету, чтобы продолжить</h2>
+      </div>
+      <button
+        class="card__text-button"
+        type="button"
+        onclick="window['dialog'].close()"
+      >
+        <span class="button__text">Оk</span>
+      </button>
     </dialog>
     <script src="./scripts/like.js"></script>
   </body>
