@@ -99,10 +99,11 @@ button {
   mix-blend-mode: hard-light;
   text-shadow: 1px #fff;
 }
-@supports ((text-shadow: 1px #fff) or (-webkit-text-stroke: 1px #fff)) {
+@supports (-webkit-text-stroke: 1px #fff) {
   .watermark {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #fff;
+    text-shadow: none;
   }
 }
 .card_text_block {
@@ -133,6 +134,7 @@ button {
   display: flex;
   align-items: center;
   padding: 0px;
+  transition: outline 0.3s ease;
 }
 .core,
 .main-body {
@@ -151,7 +153,6 @@ button {
 .card__icon-button:focus-visible {
   outline: 2px solid;
   outline-offset: -1.5px;
-  transition: outline 0.3s ease;
 }
 .card__icon-button:hover .core {
   fill: #000;
@@ -200,6 +201,7 @@ button {
   min-width: 130px;
   border: 2px solid #000;
   overflow: hidden;
+  transition: box-shadow 0.3s ease;
 }
 .card__text-button::before {
   content: "";
@@ -230,7 +232,6 @@ button {
 }
 .card__text-button:focus {
   box-shadow: 2px 2px;
-  transition: box-shadow 0.3s ease;
 }
 .card__text-button:focus-visible {
   outline: none;
